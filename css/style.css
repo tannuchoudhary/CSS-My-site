@@ -1,162 +1,194 @@
 body {
-  color: #40514E;
-  margin: 0;
-  text-align: center;
-  font-family: 'Merriweather', serif;
+    color: #40514E;
+    margin: 0;
+    text-align: center;
+    font-family: 'Merriweather', serif;
 }
 
 h1 {
-/*you can use auto to center elements*/
-/* you can check css docs for margin on mdn */
-  margin: 50px auto 0 auto;
-  font-family: 'Sacramento', cursive;
-  font-size: 5.62rem;
-  color: #66BFBF;
+    /*you can use auto to center elements*/
+    /* you can check css docs for margin on mdn */
+    margin: 50px auto 0 auto;
+    font-family: 'Sacramento', cursive;
+    /* rem means ignore all the font size of parent setting */
+    /* rem is mosre recommended then %ge or em or pixel */
+    /* as it is more reliable and least error prone */
+    font-size: 5.62rem;
+    /* line height increases the size between whatever is above the text and below the text */
+    /* line-height:2; */
+    /* we don't have any units for the line height, just assign the value */
+    color: #66BFBF;
 }
 
 h2 {
-  height: 50px;
-  font-family: 'Montserrat', sans-serif;
-  /* em is used if you want your font size to be changed
+    height: 50px;
+    font-family: 'Montserrat', sans-serif;
+    /* em is used if you want your font size to be changed
   whenever the user changes the font size in settings */
-  font-size: 2.5rem;
-  color: #66BFBF;
-  font-weight: normal;
-  padding-bottom: 10px;
+    font-size: 2.5rem;
+    color: #66BFBF;
+    font-weight: normal;
+    /* padding-bottom is to push the text little bit down */
+    padding-bottom: 10px;
 }
 
 h3 {
-  font-family: 'Montserrat', sans-serif;
-  color:#11999E;
+    font-family: 'Montserrat', sans-serif;
+    color: #11999E;
 }
-p{
-  line-height: 2;
+
+h4{
+    font-family: 'Cutive Mono', monospace;
+    color: #66BFBF;
 }
-hr{
-  border: dotted #c7cfb7 6px;
-  border-bottom: none;
-  width: 4%;
-  margin: 100px auto;
+p {
+    line-height: 2;
 }
-a{
-  color:#11999E;
-  font-family: 'Montserrat', sans-serif;
-  margin: 10px 20px;
-  text-decoration: none;
+
+hr {
+    border: dotted #c7cfb7 6px;
+    border-bottom: none;
+    width: 4%;
+    margin: 100px auto;
 }
-a:hover{
-  color:#EAF6F6;
+
+a {
+    color: #11999E;
+    font-family: 'Montserrat', sans-serif;
+    margin: 10px 20px;
+    text-decoration: none;
 }
+
+a:hover {
+    color: #EAF6F6;
+}
+
 .top-container {
-  background-color: #E4F9F5;
-  position: relative;
-  padding-top: 100px;
+    background-color: #E4F9F5;
+    position: relative;
+    padding-top: 100px;
 }
-.middle-container{
-  background-color: #E4F9F5;
-  margin: 100px 0;
+
+.middle-container {
+    background-color: #E4F9F5;
+    margin: 100px 0;
 }
-.bottom-container{
-  background-color: #66BFBF;
-  padding:50px 0 20px;
+
+.bottom-container {
+    background-color: #66BFBF;
+    padding: 50px 0 20px;
 }
+
 .mountain00 {
-  border: 100px;
-  padding: 100px;
+    border: 100px;
+    padding: 100px;
 }
 
 .top-cloud {
-  position: absolute;
-  right:  5%;
-  top: 1%;
+    position: absolute;
+    right: 5%;
+    top: 1%;
 }
 
 .bottom-cloud {
-  position: absolute;
-  left: 10%;
-  bottom: 85%;
-  margin-top: 100px;
+    position: absolute;
+    left: 10%;
+    bottom: 85%;
+    margin-top: 100px;
 }
-.dp{
-  width: 15%;
-  height: 15%;
-  border-radius: 100%;
+
+.dp {
+    width: 15%;
+    height: 15%;
+    border-radius: 100%;
+}
+
+.skills-pic {
+    width: 25%;
+    /* float is to make the image float in left side or right side */
+    float: left;
+    /* Now to create margin between image and text, we have many options */
+    /* either we can create margin before text or after image */
+    /* creating margin before text would be difficult as we have two types of text, h3 and paragraph */
+    /* but we can create margin after image very easily */
+    margin-right : 30px;
+
+    /* but  */
+}
+
+/* applying margin to the text would be little difficult so we
+would add margin to the image */
+.competitive {
+    width: 25%;
+    float: right;
+    margin-left : 30px;
+}
+
+.chess {
+    width: 25%;
+    float: left;
+    margin-right : 30px;
 
 }
 
-.skills-pic{
-  width: 25%;
-  height: 15%;
-  border-radius: 100%;
-
-}
-.competitive{
-  width: 25%;
-  height: 15%;
-  border-radius: 100%;
-
-
-}
-.chess{
-  width: 25%;
-  height: 15%;
-  border-radius: 100%;
+.drawing {
+    width: 25%;
+    float: right;
+    margin-left : 30px;
 
 }
 
-.drawing{
-  width: 25%;
-  height: 15%;
-  border-radius: 100%;
-
+.footer-link {
+    color: #11999E;
 }
 
-.footer-link{
-  color:#11999E;
-}
-.skill-row{
-  width: 50%;
-  margin: 100px auto 100px auto;
-
-  /*text-align: left;*/
-
-}
-.intro{
-  width: 30%;
-  margin: auto;
-}
-.contact-message{
-  width: 40%;
-  margin:40px auto 60px;
-}
-.copyright{
-  color:#EAF6F6;
-  font-size: 0.75rem;
-  padding: 20px 0;
-}
-.btn{
-  background: #11cdd4;
-  background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
-  background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
-  background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
-  background-image: -o-linear-gradient(top, #11cdd4, #11999e);
-  background-image: linear-gradient(to bottom, #11cdd4, #11999e);
-  -webkit-border-radius: 8;
-  -moz-border-radius: 8;
-  border-radius: 8px;
-  font-family: 'Montserrat', sans-serif;
-  color: #ffffff;
-  font-size: 20px;
-  padding: 10px 20px 10px 20px;
-  text-decoration: none;
+.skill-row {
+    width: 50%;
+    /* auto will set the margin for the center */
+     margin: 15% auto 15% auto;
+     text-align: left;
+     line-height: 2;
 }
 
-.btn:hover{
-  background: #30e3cb;
-  background-image: -webkit-linear-gradient(top, #30e3cb, #2bc48d);
-  background-image: -moz-linear-gradient(top, #30e3cb, #2bc48d);
-  background-image: -ms-linear-gradient(top, #30e3cb, #2bc48d);
-  background-image: -o-linear-gradient(top, #30e3cb, #2bc48d);
-  background-image: linear-gradient(to bottom, #30e3cb, #2bc48d);
-  text-decoration: none;
+.intro {
+    width: 30%;
+    margin: auto;
+}
+
+.contact-message {
+    width: 40%;
+    margin: 40px auto 60px;
+}
+
+.copyright {
+    color: #EAF6F6;
+    font-size: 0.75rem;
+    padding: 20px 0;
+}
+
+.btn {
+    background: #11cdd4;
+    background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -o-linear-gradient(top, #11cdd4, #11999e);
+    background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+    -webkit-border-radius: 8;
+    -moz-border-radius: 8;
+    border-radius: 8px;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: #30e3cb;
+    background-image: -webkit-linear-gradient(top, #30e3cb, #2bc48d);
+    background-image: -moz-linear-gradient(top, #30e3cb, #2bc48d);
+    background-image: -ms-linear-gradient(top, #30e3cb, #2bc48d);
+    background-image: -o-linear-gradient(top, #30e3cb, #2bc48d);
+    background-image: linear-gradient(to bottom, #30e3cb, #2bc48d);
+    text-decoration: none;
 }
